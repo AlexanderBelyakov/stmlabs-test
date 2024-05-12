@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./karla.woff") format("woff"),
+         url("./karla.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: 'Karla';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("./karla-bold.woff") format("woff"),
+         url("./karla-bold.woff2") format("woff2")
+  }
