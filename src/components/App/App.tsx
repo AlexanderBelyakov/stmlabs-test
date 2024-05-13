@@ -1,6 +1,6 @@
 import style from './App.module.scss'
 
-import { lazy, Suspense, useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 
 import Preloader from '../Preloader/Preloader'
 
@@ -15,13 +15,14 @@ const Search = lazy(() => import('../Search/Search'))
 
 const App: React.FC = () => {
 
-    const [persons, setPersons] = useState<TPerson[]>([]) // запоминаем результаты пришедшие с api
+    const dataRef = useRef<TPerson[]>([])// запоминаем результаты пришедшие с api
     const [res, setRes] = useState<TPerson[]>([]) // значения уходящие на отрисовку
 
     useEffect(() => {
         api.getData()
         .then(res =>{
-            setPersons(res.results)
+            // setPersons(res.results)
+            dataRef.current = res.results
             setRes(res.results)
         })
         .catch((err) => {
@@ -29,16 +30,18 @@ const App: React.FC = () => {
         })
     }, [])
 
+    console.log(res)
+
     function handleSearch(input: string) {
         let res
         
         if(input.includes(' ')) {
             const [firstName, lastName] = input.split(' ')
-            res = persons.filter(person => {
+            res = dataRef.current.filter(person => {
                 return person.name.first.toLowerCase().includes(firstName.toLocaleLowerCase()) && person.name.last.toLowerCase().includes(lastName.toLocaleLowerCase())
             })
         } else {
-            res = persons.filter(person => {
+            res = dataRef.current.filter(person => {
                 return person.name.first.toLowerCase().includes(input.toLocaleLowerCase()) || person.name.last.toLowerCase().includes(input.toLocaleLowerCase())
             })
         }
