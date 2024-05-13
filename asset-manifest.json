@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/stmlabs-test/static/css/main.35c70a0c.css",
+    "main.js": "/stmlabs-test/static/js/main.49e6a451.js",
+    "static/css/229.e675cedd.chunk.css": "/stmlabs-test/static/css/229.e675cedd.chunk.css",
+    "static/js/229.f510052f.chunk.js": "/stmlabs-test/static/js/229.f510052f.chunk.js",
+    "static/css/428.1f8a7ed0.chunk.css": "/stmlabs-test/static/css/428.1f8a7ed0.chunk.css",
+    "static/js/428.38747338.chunk.js": "/stmlabs-test/static/js/428.38747338.chunk.js",
+    "static/media/karla-bold.woff": "/stmlabs-test/static/media/karla-bold.13121f38c59c7ed3a39e.woff",
+    "static/media/karla.woff": "/stmlabs-test/static/media/karla.b4cf17ba74c7cf2f691a.woff",
+    "static/media/karla-bold.woff2": "/stmlabs-test/static/media/karla-bold.12388acd70bc5490bffe.woff2",
+    "static/media/karla.woff2": "/stmlabs-test/static/media/karla.efd764de749b29bca424.woff2",
+    "index.html": "/stmlabs-test/index.html",
+    "main.35c70a0c.css.map": "/stmlabs-test/static/css/main.35c70a0c.css.map",
+    "main.49e6a451.js.map": "/stmlabs-test/static/js/main.49e6a451.js.map",
+    "229.e675cedd.chunk.css.map": "/stmlabs-test/static/css/229.e675cedd.chunk.css.map",
+    "229.f510052f.chunk.js.map": "/stmlabs-test/static/js/229.f510052f.chunk.js.map",
+    "428.1f8a7ed0.chunk.css.map": "/stmlabs-test/static/css/428.1f8a7ed0.chunk.css.map",
+    "428.38747338.chunk.js.map": "/stmlabs-test/static/js/428.38747338.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35c70a0c.css",
+    "static/js/main.49e6a451.js"
+  ]
+}
