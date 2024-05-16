@@ -1,29 +1,29 @@
 type Name = {
-    first: string;
-    last: string;
-}
+  first: string;
+  last: string;
+};
 
 type Picture = {
-    thumbnail: string;
-    large: string
-}
+  thumbnail: string;
+  large: string;
+};
 
 type Location = {
-    state: string;
-    city: string;
-}
+  state: string;
+  city: string;
+};
 
 type Registered = {
-    date: string;
-}
+  date: string;
+};
 
 type Person = {
-    name: Name;
-    email: string;
-    picture: Picture;
-    location: Location;
-    phone: string;
-    registered: Registered;
-}
+  name: Name;
+  email: string;
+  picture: Picture;
+  location: Location;
+  phone: string;
+  registered: Registered;
+};
 
-export default Person
+export default Person;

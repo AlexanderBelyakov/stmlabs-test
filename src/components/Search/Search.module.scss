@@ -1,34 +1,34 @@
 .search {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 50px 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 50px 0;
 
-    &__input {
-        width: 30%;
-        border: none;
-        margin-right: 10px;
+  &__input {
+    width: 30%;
+    border: none;
+    margin-right: 10px;
 
-        &:focus {
-            outline: 1px solid #0dedae;
-        }
+    &:focus {
+      outline: 1px solid #0dedae;
+    }
+  }
+
+  &__button {
+    border: none;
+    border-radius: 10px;
+    margin-right: 5px;
+    font-weight: 600;
+
+    &:hover {
+      cursor: pointer;
     }
 
-    &__button {
-        border: none;
-        border-radius: 10px;
-        margin-right: 5px;
-        font-weight: 600;
-
-        &:hover {
-            cursor: pointer;
-        }
-
-        &_clear {
-            color: rgb(228, 8, 8);
-        }
-
-        &_find {
-            color: #028300;
-        }
+    &_clear {
+      color: rgb(228, 8, 8);
     }
+
+    &_find {
+      color: #028300;
+    }
+  }
 }

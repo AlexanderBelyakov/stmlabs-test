@@ -1,11 +1,27 @@
-.container {
+.table {
+  margin: 0 auto;
+
+  &__head {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__th {
+    width: 110px;
+  }
+
+  &__body {
     background-color: black;
-    width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
-    &__nomatch {
-        font-size: 40px;
-    }
+  &__nomatch {
+    font-size: 40px;
+    margin: 0 auto;
+    width: 300px;
+  }
 }

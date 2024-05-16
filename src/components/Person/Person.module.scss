@@ -1,66 +1,66 @@
 .person {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  &__list {
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    padding: 20px 0;
     display: flex;
-    margin: 0 auto;
-    max-width: 1200px;    
+    align-items: center;
+    border-top: 1px solid rgba(240, 240, 240, 0.5);
+    border-bottom: 1px solid rgba(240, 240, 240, 0.5);
+  }
 
-    &__list {
-        width: 100%;
-        margin: 0;
-        list-style: none;
-        padding: 20px 0;
-        display: flex;
-        align-items: center;
-        border-top: 1px solid rgba(240,240,240,.5);
-        border-bottom: 1px solid rgba(240,240,240,.5);
+  &__item {
+    border-left: 1px solid rgba(240, 240, 240, 0.5);
+    padding-left: 10px;
+    width: 150px;
+    padding-right: 100px;
+    position: relative;
+
+    &_visible {
+      width: 0;
+      display: block;
+      padding: 0;
+      margin: 0;
+      border: none;
     }
 
-    &__item {
-        border-left: 1px solid rgba(240,240,240,.5);
-        padding-left: 10px;
-        width: 150px;
-        padding-right: 100px;
-        position: relative;
-
-        &_visible {
-            width: 0;
-            display: block;
-            padding: 0;
-            margin: 0;
-            border: none;
-        }
-
-        &_invisible {
-            width: 0;
-            display: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        &:nth-child(1) {
-            border: none;
-            padding-right: 10px;
-            width: 50px;
-            padding-right: 0;
-            min-width: 60px;
-        }
-
-        &:nth-child(5) {
-            margin-right: 35px;     
-        }
-
-        &:nth-last-child(1) {
-            padding-right: 0;
-            min-width: 60px;
-        }
+    &_invisible {
+      width: 0;
+      display: none;
+      padding: 0;
+      margin: 0;
     }
 
-    &__image {
-        border-radius: 50%;
+    &:nth-child(1) {
+      border: none;
+      padding-right: 10px;
+      width: 50px;
+      padding-right: 0;
+      min-width: 60px;
     }
 
-    &__tooltip {
-        position: absolute;
-        z-index: 1;
-        bottom: -20px;
+    &:nth-child(5) {
+      margin-right: 35px;
     }
+
+    &:nth-last-child(1) {
+      padding-right: 0;
+      min-width: 60px;
+    }
+  }
+
+  &__image {
+    border-radius: 50%;
+  }
+
+  &__tooltip {
+    position: absolute;
+    z-index: 1;
+    bottom: -20px;
+  }
 }
